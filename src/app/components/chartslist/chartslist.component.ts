@@ -1,3 +1,4 @@
+import { trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import ChartModel from 'src/app/models/chartmodel';
 import { ChartsService } from 'src/app/services/charts.service';
