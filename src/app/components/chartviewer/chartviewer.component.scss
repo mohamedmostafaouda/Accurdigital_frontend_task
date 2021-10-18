@@ -9,8 +9,10 @@
 }
 
 .active-chart-container__active-chart{
-    width: 200px;
-    height: 200px;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
 }
 
 .active-chart-container__active-chart__text{
