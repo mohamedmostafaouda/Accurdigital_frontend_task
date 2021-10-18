@@ -7,7 +7,7 @@ import ChartType from '../models/chartType';
 export class CharttypeService {
   
   chartTypeArray:ChartType[] = [];
-  selectedChartTypeId:number = -1;
+  selectedChartTypeId:number = 0;
 
   constructor() { 
     this.chartTypeArrayInit();
