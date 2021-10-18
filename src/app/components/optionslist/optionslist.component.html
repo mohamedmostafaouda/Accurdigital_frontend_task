@@ -1,0 +1,7 @@
+<div class="option-list" [@listAnimation]="optionsArray.length">
+    <app-option 
+        *ngFor="let option of optionsArray" 
+        [optionName]="option.optionName" 
+        [iconSrc]="option.iconSrc">
+    </app-option>
+</div>

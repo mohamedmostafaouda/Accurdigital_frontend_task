@@ -1,0 +1,40 @@
+.dashboard{
+    display: flex;
+}
+
+.right-side{
+    width: 100%;
+}
+
+.main-container{
+    display: flex;
+}
+
+.main-container__left-side{
+    width: 100%;
+    max-width: 400px;
+    flex-shrink: 1;
+}
+
+.main-container__right-side{
+    width: 70%;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+/* Media Queries */
+$breakpoint-small-desktops: 1070px;
+@media (max-width: $breakpoint-small-desktops) {
+    .main-container{
+        flex-wrap: wrap;
+        .main-container__right-side{
+            margin: 20px;
+            width: calc(100% - 40px);
+        }
+    }
+}
+
+.right-side{
+    height: 100vh;
+    overflow: auto;
+}

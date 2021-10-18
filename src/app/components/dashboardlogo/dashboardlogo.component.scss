@@ -1,0 +1,7 @@
+@import '../../../styles.scss';
+.logo{
+    margin: 0px;
+    @include dubai-font();
+    font-weight: bold;
+    color: white;
+}

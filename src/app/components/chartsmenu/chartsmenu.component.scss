@@ -1,0 +1,40 @@
+@import '../../../styles.scss';
+
+/* Mixins */
+@mixin padding() {
+    padding: 5px;
+    padding-left: 15px;
+}
+
+/* Classes */
+.charts-menu-container{
+    @include white-box();
+    @include dubai-font();
+    margin-left: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.menu-list__menu-item{
+    color: $violet;
+    @include padding();
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid $gray;
+    border-left: 2px solid transparent;
+    transition: all 0.4s ease-in-out;
+    &:hover{
+        @extend .active-menu-item;
+        padding-left: 30px;
+    }
+}
+
+.charts-menu-container__title{
+    @include padding();
+}
+
+.active-menu-item{
+    border-left: 2px solid $light-blue;
+}

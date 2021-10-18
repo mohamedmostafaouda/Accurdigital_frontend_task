@@ -1,0 +1,16 @@
+@import '../../../styles.scss';
+
+.page-title-container{
+    padding-left: 20px;
+    padding-right: 20px;
+    @include dubai-font();
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bread-crumb__link{
+    text-decoration: none;
+    color: $light-blue;
+}

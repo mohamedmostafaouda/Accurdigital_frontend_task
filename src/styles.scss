@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+@import './variables';
+
+/* Global Styles */
+body, html{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Font imports */
+@font-face {
+    font-family: 'dubai';
+    src: url('./assets/dubai_font/DubaiW23-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'dubai';
+    src: url('./assets/dubai_font/DubaiW23-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'dubai';
+    src: url('./assets/dubai_font/DubaiW23-Regular.ttf') format('truetype');
+}
+
+/* Mixins */
+@mixin dubai-font() {
+    font-family: dubai;
+}
+
+@mixin white-box($shadow: true, $border-radius: true) {
+    /* Check about the shadow */
+    @if $shadow{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    /* Border radius for the box */
+    @if $border-radius{
+        border-radius: $box-radius;
+    }
+    background: $white;
+}

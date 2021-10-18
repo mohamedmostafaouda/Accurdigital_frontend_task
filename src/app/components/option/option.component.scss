@@ -1,0 +1,74 @@
+@import '../../../styles.scss';
+
+.option-container{
+    @include dubai-font();
+    color: $white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    overflow: hidden;
+    &:hover{
+        @extend .active-link;
+        .option-container__icon-container__icon{
+            display: none;  
+        }
+        .option-container__icon-container__icon-hover{
+            display: inline-block;
+            transition: all 0.4s ease-in-out;
+            transform: scale(1);
+            opacity: 1;
+        }
+        .option-container__text{
+            display: none;
+        }
+        .option-container__text-hover{
+            display: block;
+            transition: all 0.7s ease-in-out;
+            transform: translate(55px, 0px);
+            opacity: 1;
+        }
+    }
+}
+
+.option-container__icon-container{
+    margin-right: 15px;
+    position: relative;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.option-container__icon-container__icon{
+    width: 25px;
+    height: 25px; 
+}
+
+.option-container__text{
+    font-size: 20px;
+    color: white;
+}
+
+.active-link{
+    & .option-container__icon-container{
+        background: $light-blue;
+        padding: 10px;
+    }
+}
+
+.option-container__icon-container__icon-hover{
+    @extend .option-container__icon-container__icon;
+    position: absolute;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.option-container__text-hover{
+    @extend .option-container__text;
+    transform: translate(0px, 0px);
+    position: absolute;
+    opacity: 0;
+}

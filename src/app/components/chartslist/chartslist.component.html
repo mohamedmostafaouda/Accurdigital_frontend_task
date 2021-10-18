@@ -1,0 +1,5 @@
+<div class="chart-list-container">
+    <div *ngFor="let chart of chartsArray" class="chart-list-container__chart-container">
+        <app-chart [chartName]="chart.chartName" [chartIconSrc]="chart.chartIconSrc" [id]="chart.id"></app-chart>
+    </div>
+</div>

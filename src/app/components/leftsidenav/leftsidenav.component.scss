@@ -1,0 +1,34 @@
+@import '../../../variables';
+
+.leftside-nav{
+    width: 300px;
+    height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.leftside-nav--modifier{
+    background-color: $dark-blue;
+}
+
+.close-button{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+
+.close-button__icon{
+    width: 25px;
+    height: 25px;
+    filter: invert(100%);
+    display: none;
+}
+
+$breakpoint-mobiles: 785px;
+@media (max-width: $breakpoint-mobiles) {
+    .close-button__icon{
+        display: block;
+    }
+}

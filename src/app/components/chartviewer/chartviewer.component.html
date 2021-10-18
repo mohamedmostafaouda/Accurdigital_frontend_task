@@ -1,0 +1,8 @@
+<div [@fadeIn]="chartsService.getActiveChart().id" class="active-chart-container" *ngIf="chartsService.getActiveChart().id != -1">
+    <img class="active-chart-container__active-chart" [src]="chartsService.getActiveChart().chartIconSrc" width="50px" height="50px"/>
+    <h3 class="active-chart-container__active-chart__text">{{chartsService.getActiveChart().chartName}}</h3>
+</div>
+
+<div class="no-active-chart-container" *ngIf="chartsService.getActiveChart().id == -1">
+    Please Select Chart
+</div>

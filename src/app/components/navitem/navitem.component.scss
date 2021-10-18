@@ -1,0 +1,16 @@
+@import '../../../variables';
+.nav-item{
+    display: flex;
+    text-decoration: none;
+    position: relative;
+    padding: 5px;
+    align-items: center;
+    border: 2px solid transparent;
+    &:hover{
+        @extend .active-nav;
+    }
+}
+
+.active-nav{
+    border-bottom: 2px solid $dark-blue;
+}

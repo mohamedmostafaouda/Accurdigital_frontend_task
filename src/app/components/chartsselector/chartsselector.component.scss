@@ -1,0 +1,27 @@
+@import '../../../styles.scss';
+
+.charts-selector-container{
+    @include white-box();
+    @include dubai-font();
+    padding: 20px;
+    display: flex;
+}
+
+.charts-selector-container__left-side{
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.charts-selector-container__right-side{
+    width: calc(70% - 5px);
+    margin-left: 5px;
+    flex-shrink: 1;
+}
+
+$breakpoint-mobiles: 505px;
+@media (max-width: $breakpoint-mobiles) {
+    .charts-selector-container__left-side{
+        width: 140px;
+        flex-shrink: 0;
+    }
+}

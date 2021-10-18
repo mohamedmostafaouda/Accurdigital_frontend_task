@@ -1,0 +1,31 @@
+@import '../../../variables';
+@import '../../../styles.scss';
+
+:host{
+    background: $gray;
+    padding: 15px;
+    @include white-box(true, false);
+    @include dubai-font();
+    box-sizing: border-box;
+    display: block;
+}
+
+.nav{
+    display: flex;
+    display: flex;
+    align-items: center;
+}
+
+.nav_burger-container{
+    cursor: pointer;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-out;
+    &:hover{
+        background: $gray;
+    }
+}

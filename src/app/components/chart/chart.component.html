@@ -1,0 +1,7 @@
+<div class="chart-container" [ngClass]="{'active-chart': this.chartsService.getActiveChartId() == id}">
+    <img class="chart-container__icon" [src]="chartIconSrc"/>
+    <div class="chart-container__text">{{chartName}}</div>
+    <div class="chart-container__selected">
+        <img src="assets/icons/check.png" *ngIf="this.chartsService.getActiveChartId() == id" class="chart-container__selected__check"/>
+    </div>
+</div>

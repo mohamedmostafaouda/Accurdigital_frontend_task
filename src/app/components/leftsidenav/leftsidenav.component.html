@@ -1,0 +1,6 @@
+<div [@showHideAnimation]="leftSideNavService.getCurrentStatus()" @fadeSlideInOut class="leftside-nav leftside-nav--modifier">
+    <div class="close-button"><img class="close-button__icon" (click)="leftSideNavService.toggleLeftSideNav()" src="assets/icons/close.png"/></div>
+    <app-dashboardlogo></app-dashboardlogo>
+    <app-profiledata></app-profiledata>
+    <app-optionslist></app-optionslist>
+</div>

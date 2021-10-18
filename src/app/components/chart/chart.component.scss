@@ -1,0 +1,63 @@
+@import '../../../styles.scss';
+
+.chart-container{
+    @include dubai-font();
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    height: 100px;
+    padding: 15px;
+    transition: 0.2s all ease-in-out;
+    width: 70px;
+    font-size: 12px;
+
+    &:hover{
+        @extend .active-chart;
+    }
+}
+
+.chart-container__icon{
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.active-chart{
+    background: $light-blue;
+    border-radius: $box-radius;
+    color: white;
+    .chart-container__icon{
+        filter: invert(100%);
+    }
+}
+
+.chart-container__selected__check{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    top: -10px;
+    right: -10px;
+    border: $white 5px solid;
+    border-radius: 50%;
+    animation-name: pop-in;
+    animation-duration: 0.5s;
+}
+
+.chart-container__text{
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+@keyframes pop-in {
+    from {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+    to {
+        transform:  translateX(0px);
+        opacity: 1;
+    }
+}
