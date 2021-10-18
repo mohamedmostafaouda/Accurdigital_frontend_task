@@ -34,10 +34,18 @@
 }
 
 /* Media Query */
-$breakpoint-mobiles: 505px;
-@media (max-width: $breakpoint-mobiles) {
-    .chart-list-container__chart-container{
+$breakpoint-tablets: 874px;
+
+@media (max-width: $breakpoint-tablets) {
+    .chart-list-container{
+        display: block;
+        white-space:nowrap;
         width: 100%;
-        margin: 10px;
+        overflow-x: auto;
+        height: 180px;
+    }
+    .chart-list-container__chart-container{
+        display: inline-block;
+        width: 100px;
     }
 }

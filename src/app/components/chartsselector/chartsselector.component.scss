@@ -18,10 +18,24 @@
     flex-shrink: 1;
 }
 
-$breakpoint-mobiles: 505px;
-@media (max-width: $breakpoint-mobiles) {
+/* Media Query */
+$breakpoint-tablets: 874px;
+
+@media (max-width: $breakpoint-tablets) {
+    .charts-selector-container{
+        flex-wrap: wrap;
+    }
     .charts-selector-container__left-side{
-        width: 140px;
-        flex-shrink: 0;
+        width: 100%;
+    }
+    .charts-selector-container__right-side{
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
     }
 }
+
+

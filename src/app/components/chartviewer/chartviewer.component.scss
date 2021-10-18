@@ -15,8 +15,8 @@
 
 .active-chart-container__active-chart__text{
     width: 100%;
-    margin-top: -100px;
     text-align: center;
+    margin-top: -100px;
 }
 
 .no-active-chart-container{
@@ -27,15 +27,11 @@
 }
 
 /* Media Query */
-$breakpoint-mobiles: 577px;
+$breakpoint-mobiles: 874px;
 @media (max-width: $breakpoint-mobiles) {
-    .active-chart-container__active-chart{
-        width: 100px;
-        height: 100px;
-    }
     .active-chart-container__active-chart__text{
         width: 100%;
-        margin-top: -200px;
         text-align: center;
+        margin-top: 10px;
     }
 }
