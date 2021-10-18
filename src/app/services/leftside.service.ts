@@ -14,6 +14,7 @@ export class LeftsideService {
   
   constructor() { 
     this.itemsInit();
+    this.closeOnSmallScreens();
   }
 
   itemsInit(){
@@ -36,4 +37,10 @@ export class LeftsideService {
     return this.leftSideNavStatus;
   }
   
+  closeOnSmallScreens(){
+    if(window.innerWidth < 890){
+      this.leftSideNavStatus = LeftNavStatus.Closed;
+    }
+  }
+
 }

@@ -17,6 +17,7 @@ import { ChartsselectorComponent } from './components/chartsselector/chartsselec
 import { ChartslistComponent } from './components/chartslist/chartslist.component';
 import { ChartComponent } from './components/chart/chart.component';
 import { ChartviewerComponent } from './components/chartviewer/chartviewer.component';
+import { CharttypeComponent } from './components/charttype/charttype.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ChartviewerComponent } from './components/chartviewer/chartviewer.compo
     ChartsselectorComponent,
     ChartslistComponent,
     ChartComponent,
-    ChartviewerComponent
+    ChartviewerComponent,
+    CharttypeComponent
   ],
   imports: [
     BrowserModule,

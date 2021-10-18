@@ -2,8 +2,11 @@
     <h2 class="charts-menu-container__title">Motors Charts</h2>
     
     <div class="menu-list">
-        <a href="#" class="menu-list__menu-item">Datasource</a>
-        <a href="#" class="menu-list__menu-item active-menu-item">Graph Type</a>
-        <a href="#" class="menu-list__menu-item">Properties</a>
+        <app-charttype 
+        *ngFor="let chartType of chartTypeArray; 
+        let i = index" 
+        [chartTypeName]="chartType.chartTypeName"
+        [chartTypeId] = "i"
+        ></app-charttype>
     </div>
 </div>
