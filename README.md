@@ -1,3 +1,10 @@
+# Hi, I'm Mohamed! 👋
+
+
+## 🛠 Skills
+Angular, Typescript, Sass, Html..
+  
+
 # Frontendtask
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
